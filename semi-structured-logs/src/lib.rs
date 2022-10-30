@@ -10,7 +10,6 @@ pub enum LogLevel {
     Error,
 }
 
-
 /// primary function for emitting logs
 pub fn log(level: LogLevel, message: &str) -> String {
     match (level) {
@@ -20,11 +19,11 @@ pub fn log(level: LogLevel, message: &str) -> String {
     }
 }
 pub fn info(message: &str) -> String {
-    return "[INFO]: ".to_owned() + message; 
+    return "[INFO]: ".to_owned() + message;
 }
 pub fn warn(message: &str) -> String {
-    return "[WARNING]: ".to_owned() + message; 
+    return "[WARNING]: ".to_owned() + message;
 }
 pub fn error(message: &str) -> String {
-    return "[ERROR]: ".to_owned() + message; 
+    return "[ERROR]: ".to_owned() + message;
 }

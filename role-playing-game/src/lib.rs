@@ -13,17 +13,13 @@ impl Player {
         if self.health > 0 {
             return None;
         }
-        let v = if self.level < 10{
-            None
-        } else {
-            Some(100)
-        };
+        let v = if self.level < 10 { None } else { Some(100) };
 
         return Some(Player {
             health: 100,
             mana: v,
-            level: self.level
-        })
+            level: self.level,
+        });
     }
 
     pub fn cast_spell(&mut self, mana_cost: u32) -> u32 {
@@ -36,7 +32,7 @@ impl Player {
                 return 0;
             }
         }
-        let mana = self.mana.unwrap();  
+        let mana = self.mana.unwrap();
         if mana >= mana_cost {
             self.mana = Some(mana - mana_cost);
             return mana_cost * 2;

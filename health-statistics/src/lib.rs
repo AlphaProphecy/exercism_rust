@@ -10,11 +10,7 @@ pub struct User {
 
 impl User {
     pub fn new(name: String, age: u32, weight: f32) -> Self {
-        return User {
-            name,
-            age,
-            weight
-        }
+        return User { name, age, weight };
     }
 
     pub fn name(&self) -> &str {
