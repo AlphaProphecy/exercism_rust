@@ -14,8 +14,8 @@ Website: <https://exercism.org/>
 - [role-playing-game](role-playing-game/README.md)
 - [semi-structured-logs](semi-structured-logs/README.md)
 - [short-fibonacci](short-fibonacci/README.md)
-- [spiral-matrix](spiral-matrix\README.md)
+- [spiral-matrix](spiral-matrix/README.md)
 
 ## Incomplete Exercises
 
-- [pig-latin](pig-latin\README.md)
+- [pig-latin](pig-latin/README.md)
